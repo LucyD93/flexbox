@@ -1,0 +1,109 @@
+hmtl, body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    background-color: midnightblue;
+}
+
+.titolo-testata{
+    color: white;
+}
+
+.main-nav{
+    background-color: teal;
+    margin-top: -16px;
+}
+
+.main-menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    list-style: none;
+    list-style-image: none;
+}
+
+.menu-link{
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.menu-link :hover{
+    color: white;
+    background-color: tomato;
+}
+
+.articoli {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.contenuto{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px;
+}
+
+.contenuto:last-child{
+    flex-grow: 1;
+}
+
+.artiocolo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: lightsalmon;
+    border: 5px solid dodgerblue;
+    border-radius: 15px;
+    text-align: justify;
+    flex-grow: 1;
+}
+
+
+button{
+    font-weight: bold;
+    background-color: teal;
+    width: 200px;
+    align-self: center;
+    margin-top: auto;
+}
+
+button:hover {
+    font-weight: bold;
+    background-color: tomato;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 576px) {
+    .contenuto{
+        width: 48%;
+    }
+    
+}
+
+@media  screen and (max-width: 768px) {
+    main-menu {
+        flex-direction: column;
+    }
+    
+    .contenuto{
+        padding: 5px;
+    }
+
+    .contenuto:nth-last-child(-n+2) {
+        width: 48%;
+    }
+}
